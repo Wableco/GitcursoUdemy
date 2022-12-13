@@ -1,0 +1,116 @@
+Lista de comandos Git
+	
+	git init 
+iniciar um repositorio.
+
+
+1.1.	git status
+Ver arquivos que foram adicionados/alterados
+
+1.2.	git add .
+Adicionar todos os itens ao rastreio do repositorio. apenas "git add 'nome do arquivo'" adiciona ao rastreio.
+
+
+2.	git commit -m "EX:Versão1"
+versionar um repositorio.
+
+2.1.	git commit --amend
+abre o editor de texto, abre com o VIM mas pode ser alterado
+
+2.1.1	git commit --amend -m "nomenclatura"
+Altera a ultima versão do repositorio.
+
+2.1.2	git commit --amend --no-edit
+atualiza a ultima versão.
+
+
+
+3.1.	git rm --cached "nome do arquivo ou '.'"
+remover arquivo especifico ou todos com o "." --atenção, não recomendado--.
+tambem usado para restirar do rastreio do repositorio
+
+3.1.1	rm
+Remover. "rm -fr 'iten'" remover forçado e recurcivo
+
+3.2.	git diff
+quando houver arquivos modificados, é comparado a versão atual com a versão modificada.
+
+3.3.	git checkout "hash da versão"
+acessa a versão desejada atraves do hash digitado, estilo uma "volta no tempo". digitar "nome declarado no artigo 4.3" para voltar(master como padrão).
+
+3.3.1	git checkout "nome do arquivo"
+Acessa a ultima versão do arquivo que esteja rastreado
+
+3.4.	git log --oneline -3
+mostrar versões do repositorio simplificada, retirar "--oneline" para mais detalhes, esta mostrando apenas as "-3" ultimas mudanças
+
+3.4.1.	git log --stat
+mostrar versões e quais alterações os arquivos tiveram.
+
+3.5.	git clone "nome do arquivo para clonar" "nome do arquivo clonado"
+clonar um repositorio.
+
+3.5.1	git clone "URL do github"
+Clonar apartir do url no github
+
+3.6	git restore --staged "nome do arquivo"
+restaura um arquivo para a ultima versão
+
+3.7	git reset --hard
+reinicia para a ultima versão. perde todas as modificações
+
+
+
+4.1.	git config --global user.name "nome do usuario"
+definir nome do usuario.
+
+4.1.1	git config --global user.email "email do usuario"
+definir email para contato do usuario.
+
+4.1.2	git config --global init.defaultBranch "nomear"
+Defini a nomenclatura do repositorio.
+
+4.1.3	git config --global core.editor "('editavel') --wait"
+Definir editor de texto padrão, pode ser colocado o caminho do executavel para ser aberto na região ('editavel') sem ('')
+
+
+
+5.1	git clean
+limpa todos os arquivos que não estejam rastreados
+
+5.1.1	git clean -f
+limpa forçadamente todos os arquivos que não estejam rastreados
+
+5.2.	cd ..
+voltar uma pasta.
+
+5.3.	ls -a
+listar itens ocultos na pasta atual ,apenas ls lista itens na pasta.
+
+5.4.	clear
+limpar tela.
+
+5.5	touch
+Criar um arquivo. (arquivo ".gitIgnore", é um arquivo que ignora todos que tem em sua lista, pode utilizar "*.txt" para ignorar todos os arquivos txt podendo trocar a extensão do arquivo)
+
+
+
+6.1	git update-index --skip-worktree index.html
+ignorar arquivo index.html.
+
+6.2	git update-index --no-skip-worktree index.html
+deixar de ignorar o arquivo index.html
+
+7.1	git remote -v
+Ver endereço do repositorio vinculado a um servidor remoto ou não.
+
+7.2	git remote add "nome do endereço do servidor remoto" "endereço do servidor"
+adicionar um servidor e nomear qual servidor.
+
+7.3	git push
+enviar os arquivos para o servidor
+
+7.4	git pull
+Atualizar repositorio.
+
+7.5
