@@ -132,6 +132,10 @@ Iniciar arquivo, pode usar "."para abrir tudo.
 iniciar um "ajudante de conexão SSH"
 
 7.6.1	ssh-add "~/.ssh/[nome do arquivo]"
+<<<<<<< HEAD
 adicionar a chave ssh. -"só usar depois de ativar o agente _7.6_"-
 
 7.+
+=======
+adicionar a chave ssh. -"só usar depois de ativar o agente _7.6_"-
+>>>>>>> 71cb9c64021a68cb6727b9c4a33a5f1cbfbc11e2
