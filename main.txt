@@ -50,7 +50,7 @@ mostrar versões e quais alterações os arquivos tiveram.
 3.5.	git clone "nome do arquivo para clonar" "nome do arquivo clonado"
 clonar um repositorio.
 
-3.5.1	git clone "URL do github"
+3.5.1	git clone "URL do github" "Novo nome do arquivo"
 Clonar apartir do url no github
 
 3.6	git restore --staged "nome do arquivo"
@@ -101,11 +101,16 @@ ignorar arquivo index.html.
 6.2	git update-index --no-skip-worktree index.html
 deixar de ignorar o arquivo index.html
 
+
+
 7.1	git remote -v
 Ver endereço do repositorio vinculado a um servidor remoto ou não.
 
 7.2	git remote add "nome do endereço do servidor remoto" "endereço do servidor"
 adicionar um servidor e nomear qual servidor.
+
+7.2.1	git remote set-url "nome do servidor" "URL do servidor"
+Seleciona qual servidor fazer upload
 
 7.3	git push
 enviar os arquivos para o servidor
@@ -113,4 +118,18 @@ enviar os arquivos para o servidor
 7.4	git pull
 Atualizar repositorio.
 
-7.5
+7.5	ssh-keygen
+gerar uma chave de SSH.
+
+7.5.2	cd ~/.ssh/
+navegar até a chave SSH
+-"depois de abrir a pasta, a chave padrão é (id_rsa.pub), abrir com bloco de notas"- [abrir com codigo 7.5.3, logo abaixo]
+
+7.5.3	start "nome arquivo"
+Iniciar arquivo, pode usar "."para abrir tudo.
+
+7.6	eval $(ssh-agent)
+iniciar um "ajudante de conexão SSH"
+
+7.6.1	ssh-add "~/.ssh/[nome do arquivo]"
+adicionar a chave ssh. -"só usar depois de ativar o agente _7.6_"-
