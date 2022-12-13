@@ -133,3 +133,5 @@ iniciar um "ajudante de conexão SSH"
 
 7.6.1	ssh-add "~/.ssh/[nome do arquivo]"
 adicionar a chave ssh. -"só usar depois de ativar o agente _7.6_"-
+
+7.+
