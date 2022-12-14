@@ -56,6 +56,9 @@ mostrar versões do repositorio simplificada, retirar "--oneline" para mais deta
 3.4.1.	git log --stat
 mostrar versões e quais alterações os arquivos tiveram.
 
+3.4.2	git log "nome da branch" --oneline -"X"
+Mostra ultimas "X" commits feitos na branch
+
 3.5.	git clone "nome do arquivo para clonar" "nome do arquivo clonado"
 clonar um repositorio.
 
