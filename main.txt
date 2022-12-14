@@ -39,7 +39,16 @@ quando houver arquivos modificados, é comparado a versão atual com a versão m
 acessa a versão desejada atraves do hash digitado, estilo uma "volta no tempo". digitar "nome declarado no artigo 4.3" para voltar(master como padrão).
 
 3.3.1	git checkout "nome do arquivo"
-Acessa a ultima versão do arquivo que esteja rastreado
+Acessa a ultima versão do arquivo que esteja rastreado.
+
+3.3.2	git checkout "nome da branch"
+Mudar para a branch desejada.
+
+3.3.3	git checkout -b "nome da branch"
+Criar uma branch.
+
+3.3.4	git checkout -f "nome da branch"
+altera para a branch desejada e desfaz todas as alterações dos arquivos.
 
 3.4.	git log --oneline -3
 mostrar versões do repositorio simplificada, retirar "--oneline" para mais detalhes, esta mostrando apenas as "-3" ultimas mudanças
@@ -113,7 +122,9 @@ adicionar um servidor e nomear qual servidor.
 Seleciona qual servidor fazer upload
 
 7.3	git push
-enviar os arquivos para o servidor
+enviar os arquivos para o servidor.
+
+7.3.1	git push --set-upst  
 
 7.4	git pull
 Atualizar repositorio.
@@ -123,15 +134,31 @@ gerar uma chave de SSH.
 
 7.5.2	cd ~/.ssh/
 navegar até a chave SSH
--"depois de abrir a pasta, a chave padrão é (id_rsa.pub), abrir com bloco de notas"- [abrir com codigo 7.5.3, logo abaixo]
+-"depois de abrir a pasta, a chave padrão é (id_rsa.pub), abrir com bloco de notas"- [abrir com codigo 7.5.3, logo abaixo].
 
 7.5.3	start "nome arquivo"
 Iniciar arquivo, pode usar "."para abrir tudo.
 
 7.6	eval $(ssh-agent)
-iniciar um "ajudante de conexão SSH"
+iniciar um "ajudante de conexão SSH".
 
 7.6.1	ssh-add "~/.ssh/[nome do arquivo]"
-adicionar a chave ssh. -"só usar depois de ativar o agente _7.6_"-
+adicionar a chave ssh. -"só usar depois de ativar o agente _7.6_"-.
 
-7.+
+8.1	git branch
+Ver lista de branchs.
+
+8.1.1	git branch "nome da branch"
+Cria uma nova branch. -para trocar para uma branch desejada seguir '3.3.2'-
+
+8.1.2	git branch -d "nome da brnach"
+Deletar uma branch, usar "-D" para forçar o delete.
+
+9.1	git switch "nome da branch"
+alternar entre branchs.
+
+9.1.1	git switch -
+seleciona a ultima branch, pode ficar digitando para alternar de master/dev, dev/master, master/dev.
+
+9.1.2	git switch -c "nome da branch"
+Criar uma branch e alternar para ela.
