@@ -35,6 +35,8 @@ Remover. "rm -fr 'iten'" remover forçado e recurcivo
 3.2.	git diff
 quando houver arquivos modificados, é comparado a versão atual com a versão modificada.
 
+
+
 3.3.	git checkout "hash da versão"
 acessa a versão desejada atraves do hash digitado, estilo uma "volta no tempo". digitar "nome declarado no artigo 4.3" para voltar(master como padrão).
 
@@ -49,6 +51,8 @@ Criar uma branch.
 
 3.3.4	git checkout -f "nome da branch"
 altera para a branch desejada e desfaz todas as alterações dos arquivos.
+
+
 
 3.4.	git log --oneline -3
 mostrar versões do repositorio simplificada, retirar "--oneline" para mais detalhes, esta mostrando apenas as "-3" ultimas mudanças
@@ -180,3 +184,7 @@ seleciona a ultima branch, pode ficar digitando para alternar de master/dev, dev
 
 9.1.2	git switch -c "nome da branch"
 Criar uma branch e alternar para ela.
+
+10.1	git merge "nome branch = X"
+-trazer alterções de X para a branch atual-
+
