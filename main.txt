@@ -124,7 +124,11 @@ Seleciona qual servidor fazer upload
 7.3	git push
 enviar os arquivos para o servidor.
 
-7.3.1	git push --set-upst  
+7.3.1	git push --set-upstream "nome do servidor" "nome da branch"
+linkar/criar a branch no servidor.
+
+7.3.2	git push --delete "nome do servidor" "Nome da branch"
+Deletar branch do servidor.
 
 7.4	git pull
 Atualizar repositorio.
@@ -145,6 +149,8 @@ iniciar um "ajudante de conexão SSH".
 7.6.1	ssh-add "~/.ssh/[nome do arquivo]"
 adicionar a chave ssh. -"só usar depois de ativar o agente _7.6_"-.
 
+
+
 8.1	git branch
 Ver lista de branchs.
 
@@ -153,6 +159,15 @@ Cria uma nova branch. -para trocar para uma branch desejada seguir '3.3.2'-
 
 8.1.2	git branch -d "nome da brnach"
 Deletar uma branch, usar "-D" para forçar o delete.
+
+8.2	git branch -m "novo nome da branch"
+Altera o nome da branch atual.
+
+8.2.1	git branch -m "nome da branch para alterar" "novo nome da branch"
+alterar nome de uma branch especifica
+
+--para criar uma branch do servidor usar "7.3.1"--
+--para deletar uma branch no servidor usar "7.3.2"--
 
 9.1	git switch "nome da branch"
 alternar entre branchs.
