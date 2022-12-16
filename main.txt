@@ -176,6 +176,12 @@ alterar nome de uma branch especifica
 --para criar uma branch do servidor usar "7.3.1"--
 --para deletar uma branch no servidor usar "7.3.2"--
 
+8.3	git branch --merged
+Ver quais branchs já foram unidas/mergiadas.
+
+8.3.1	git branch --no-merged
+Ver quais branchs não foram unidas/mergiadas com a branch principal
+
 9.1	git switch "nome da branch"
 alternar entre branchs.
 
