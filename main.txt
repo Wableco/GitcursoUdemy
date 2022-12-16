@@ -198,3 +198,24 @@ Criar uma branch e alternar para ela.
 10.1	git merge "nome branch = X"
 -trazer alterções de X para a branch atual-
 
+-------
+Pode acontecer de ter um conflito no git pelos merges que ocorrem caso tenha duas branchs que tenham commits
+com a alteração na mesma linha, é criado uma branch temporaria para abrir os arquivos e fazer as alterações
+definitivas, elas são marcadas do jeito mostrado abaixo:
+
+O valor de X era 3, então criamos duas branchs para trabalhar e resolvemos mudar para 2, depois pensamos melhor
+e preferimos que X seja 1
+
+#<<<<<<< Head
+#"Codigo alterado"
+#x = 2
+#=======
+#"Codigo puxado com alterações"
+#x = 1
+#>>>>>>> "Branch que está trazendo a alteração"
+-------
+
+10.1.1	git merge --abort
+Sair do Merging. pode usar "3.7" para poder "resetar".
+
+
