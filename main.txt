@@ -218,4 +218,17 @@ e preferimos que X seja 1
 10.1.1	git merge --abort
 Sair do Merging. pode usar "3.7" para poder "resetar".
 
+10.2.	git tag	"nome" "hash do commit"
+Criar uma tag no mesmo commit em que está. lightweith
 
+10.2.1	git tag -a -m "titulo da tag" "nome mostrado no log"
+adiciona uma tag com mais informações de quem criou
+
+10.2.2	git show "nome da tag"
+mostra os detalhes de quem criou a tag de 10.2.1.
+
+10.2.3	git tag
+mostra todas as tags do projeto
+
+10.2.4	git tag -n
+Mostra todas as tags e a descrição.
