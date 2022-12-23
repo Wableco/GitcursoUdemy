@@ -83,6 +83,15 @@ reinicia para a ultima versão. perde todas as modificações.
 Pode voltar commits apenas adicionado ao final "HEAD~X" sendo X o valor de commit que queira voltar.
 esse comando esquece mesmo todos os commits que haviam depois dele.
 
+3.7.1	git reset --mixed
+commit é desfeito, porem as alterações não.
+
+3.7.2	git reset --soft
+commit desfeito, porem as alterações estão na area de preparação.
+é como se ja tivesse feito um "git add".
+
+
+
 
 
 4.1.	git config --global user.name "nome do usuario"
@@ -144,6 +153,9 @@ linkar/criar a branch no servidor.
 
 7.3.2	git push --delete "nome do servidor" "Nome da branch"
 Deletar branch do servidor.
+
+7.3.3	git push --force
+fazer uma atualização forçada.
 
 7.4		git pull
 Atualizar repositorio.
@@ -273,4 +285,3 @@ Cria uma branch com base no stash desejado.
 10.4.	git revert Head
 cria um novo commit como os arquivos eram antes.
 
-10.4.1	
