@@ -23,6 +23,9 @@ Altera a ultima versão do repositorio.
 2.1.2	git commit --amend --no-edit
 atualiza a ultima versão.
 
+2.1.3	git commit -a -m "Titutlo commit"
+Adiciona(1.2) todos os arquivos e cria o commit.
+
 
 
 3.1.	git rm --cached "nome do arquivo ou '.'"
@@ -76,7 +79,9 @@ Clonar apartir do url no github
 restaura um arquivo para a ultima versão
 
 3.7	git reset --hard
-reinicia para a ultima versão. perde todas as modificações
+reinicia para a ultima versão. perde todas as modificações. 
+Pode voltar commits apenas adicionado ao final "HEAD~X" sendo X o valor de commit que queira voltar.
+esse comando esquece mesmo todos os commits que haviam depois dele.
 
 
 
@@ -140,10 +145,10 @@ linkar/criar a branch no servidor.
 7.3.2	git push --delete "nome do servidor" "Nome da branch"
 Deletar branch do servidor.
 
-7.4	git pull
+7.4		git pull
 Atualizar repositorio.
 
-7.5	ssh-keygen
+7.5		ssh-keygen
 gerar uma chave de SSH.
 
 7.5.2	cd ~/.ssh/
@@ -242,3 +247,30 @@ Enviar todas as tags para o servidor.
 
 10.2.6	git tag -d "nome da tag"
 Deletar tag.
+
+
+
+10.3.	git stash
+cria um save. Ao ser criado, é "aberto" o iten sem as alterações
+
+10.3.1	git stash list
+mostra uma lista dos stashs criados.
+
+10.3.2	git stash apply
+Abre um Save. pode usar ao final "stash@{X}" sendo X o numero do stash que queria usar.
+
+10.3.3	git stash pop
+Publica as mudanças feitas para o commit. 
+Depois de feita as alterações, é mesclado com as alterações que já foram feitas
+
+10.3.4	git stash drop
+exclui o ultimo stash.
+
+10.3.5	git stash branch stach@{X}
+Cria uma branch com base no stash desejado.
+
+
+10.4.	git revert Head
+cria um novo commit como os arquivos eram antes.
+
+10.4.1	
