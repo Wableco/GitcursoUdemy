@@ -1,4 +1,4 @@
-Lista de comandos Git
+Comandos Git
 	
 	git init 
 iniciar um repositorio.
@@ -157,8 +157,15 @@ Deletar branch do servidor.
 7.3.3	git push --force
 fazer uma atualização forçada.
 
-7.4		git pull
+7.3.4	git push --force-with-lease
+forçar o push sem o risco de sobrescrever acidentalmente o trabalho de outra pessoa.
+
+
+
+7.4	git pull
 Atualizar repositorio.
+
+
 
 7.5		ssh-keygen
 gerar uma chave de SSH.
@@ -285,3 +292,7 @@ Cria uma branch com base no stash desejado.
 10.4.	git revert Head
 cria um novo commit como os arquivos eram antes.
 
+
+
+11.1.	git rebase "X"
+usar como Base o commit "X". trazendo as mudanças que o outro tem
