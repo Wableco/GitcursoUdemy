@@ -106,6 +106,15 @@ Defini a nomenclatura do repositorio.
 4.1.3	git config --global core.editor "('editavel') --wait"
 Definir editor de texto padrão, pode ser colocado o caminho do executavel para ser aberto na região ('editavel') sem ('')
 
+4.2	git config --global alias."Abreviação" "codigo(Exemplo:status,log,etc...)"
+Cria um "atalho" do codigo desejado
+
+4.2.1	git config --global alias.line 'log --oneline'
+nesse caso, é criado um atalho do log --oneline para apenas line, quando digitar "git line" ira mostrar o resultado de
+"git log --oneline". pode usar a mesma ideia para criar outros codigos.
+
+4.2.2	git config --global --unset alias."abreviação"
+desativa o atalho, por exemplo se por "line" ira tirar o atalho do exemplo passado.
 
 
 5.1	git clean
@@ -165,6 +174,8 @@ forçar o push sem o risco de sobrescrever acidentalmente o trabalho de outra pe
 7.4	git pull
 Atualizar repositorio.
 
+7.4.1	git pull --rebase
+Puxa o ultimo commit do servidor.
 
 
 7.5		ssh-keygen
@@ -194,6 +205,9 @@ Cria uma nova branch. -para trocar para uma branch desejada seguir '3.3.2'-
 8.1.2	git branch -d "nome da brnach"
 Deletar uma branch, usar "-D" para forçar o delete.
 
+8.1.3	git branch -a
+Listar todas as branchs incluindo as do servidor.
+
 8.2	git branch -m "novo nome da branch"
 Altera o nome da branch atual.
 
@@ -208,6 +222,9 @@ Ver quais branchs já foram unidas/mergiadas.
 
 8.3.1	git branch --no-merged
 Ver quais branchs não foram unidas/mergiadas com a branch principal
+
+8.3.2	git branch -a
+mostrar todas as branchs
 
 
 
@@ -296,3 +313,37 @@ cria um novo commit como os arquivos eram antes.
 
 11.1.	git rebase "X"
 usar como Base o commit "X". trazendo as mudanças que o outro tem
+
+
+11.2.	git fetch "servidor" "nome da branch"
+traz a alterações do servidor.
+
+
+
+
+11.3.	git cherry-pick "hash"
+traz as alterações do commit escolhido.
+
+
+
+11.4.	git bisect start
+começar uma busca pelo problema
+
+11.4.1	git bisect good "hash"
+informar o commit que começou bem ou que estava funcionando.
+
+11.4.2	git bisect bad "hash"
+Onde começou a dar errado.
+
+11.4.3	git bisect good
+Se o que esta mostrado esta de acordo com o desejado.
+
+11.4.3	git bisect bad
+se o que foi mostrado não esta de acordo com o desejado.
+
+11.4.4	git bisect reset
+finalizar o bisect.
+
+
+11.5	"X" | grep "palavra"
+É possivel utilizar qualquer codigo "X" e filtrar com a "palavra"
